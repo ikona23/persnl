@@ -1,59 +1,187 @@
 @import "twitter/bootstrap/bootstrap";
 @import "twitter/bootstrap/responsive";
-
-
-// Set the correct sprite paths
-@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
-@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
-
-// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
-@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
-@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot?#iefix");
-@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
-@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
-@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
-
-// Font Awesome
-@import "fontawesome/font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Lato-:300,700);
 @keyframes hideshow {
   0% { opacity: 1; }
   10% { opacity: 1; }
   15% { opacity: 0; }
   100% { opacity: 0; }
 }
-
-/* Variables */
-/*$color-1: blue;*/
-/*$color-2:#ED1F24;*/
-
 /* Fonts */
-//@import url(http://fonts.googleapis.com/css?family=Lato-:300,700);
 body {
   font-family: 'Lato';
   font-size: 1em;
   font-weight: 300;
-  line-height: 1.5;
   letter-spacing: 0.05em;
   background-color: #99cc99;
 }
+svg#logo{
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+.nav-pills > li.active > a {
+  background-color:cornflowerblue;
+}
+.nav-pills>li.active>a:hover {
+  background-color: deepskyblue;
+}
+.nav-pills>li>a {
+  color: darkslategrey;
+}
+.nav-pills {
+  padding-top:10px;
+}
+.thumbnails {
+  margin-bottom:50px;
+}
+.darkBG {
+  background:#99cc99;
+  margin-top: 40px;
+}
+.darkerBG {
+  background:#99cc99;
+}
+li
+{
+  list-style-type:none;
+}
+.avatar img {
 
+  width: 20em;
+  height: 20em;
+  margin-bottom: .5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+a:link, a:visited {
+  color:#eee;
+  text-decoration: none;
+}
+.st0 {
+  fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:5;
+  stroke-dasharray: 2900;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 3s linear forwards;
+  -moz-animation: dash 3s linear forwards;
+  -o-animation: dash 3s linear forwards;
+  animation: dash 4s linear forwards;
+}
+h1 {
+  text-align: center;
+  color: #f5f5f5;
+  size:150%;
+}
+h3 {
+  text-align: center;
+  color:#567356;
+}
+li:hover {
+  -webkit-filter: drop-shadow( 0px 1px 5px #336633 );
+  filter: drop-shadow( 0px 1px 5px #336633);
+}
 
+svg {
+  width: 150px;
+  height: 150px;
+  -webkit-filter: drop-shadow( 0px 0px 5px #555 );
+  -moz-filter: drop-shadow( 0px 0px 5px #555 );
+  filter: drop-shadow( 0px 0px 5px #555 );
+  transition:1s;
+  margin-bottom: 50px;
+}
+svg:hover{
+  -webkit-filter: drop-shadow( 0px 15px 5px #336633 );
+  -moz-filter: drop-shadow( 0px 15px 5px #336633 );
+  filter: drop-shadow( 0px 15px 5px #336633);
+}
+.rowtext-center {
+  margin-bottom: 50px;
+}
+#logo {
+  cursor:pointer;
+}
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset:2900;
+  }
+  to {
+    stroke-dashoffset:0;
+  }
+}
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url('MonoSocialIconsFont-1.10.eot');
+  src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+  url('MonoSocialIconsFont-1.10.woff') format('woff'),
+  url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+  url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+}
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#2D2D2D;
+  color:#EAEAEA;
+  padding:20px 0;
+}
+.footer a {
+  color:#EAEAEA;
+}
+.footer a:hover {
+  color:#E4842C;
+}
+.footer .inside {
+  font-family: 'Cabin Sketch', arial, serif;
+  font-size:22px;
+  text-align:center;
+}
+svg#skype,svg#github, svg#email, svg#link {
+  height:30%;
+  width: 30%;
+}
+#logo:hover .st0{
+  fill:#99cc99;
+  transition: 5s;
+}
 
-/* Layout */
+#skype:hover{
+  fill:#00aff0;
+  transition: 1s;
+}
 
-
-
-
-
-
-// Glyphicons
-//@import "twitter/bootstrap/sprites.less";
-
-// Your custom LESS stylesheets goes here
-//
-// Since bootstrap was imported above you have access to its mixins which
-// you may use and inherit here
-//
-// If you'd like to override bootstrap's own variables, you can do so here as well
-// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
-//
+#link:hover{
+  fill:#0e76a8;
+  transition: 1s;
+}
+#email:hover{
+  fill:darkred;
+  transition: 1s;
+}
+#email, #link, #skype, #logo, #github {
+  width: 20%;
+  height:20%;
+}

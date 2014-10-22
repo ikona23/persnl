@@ -1,0 +1,200 @@
+<style>
+    @import url(http://fonts.googleapis.com/css?family=Lato-:300,700);
+
+    #skill {
+        list-style: none;
+
+        width: 296px;
+        margin: 50px auto 0;
+        position: relative;
+        line-height: 2em;
+        padding: 30px 0;
+    }
+
+    #skill li {
+        margin-bottom:50px;
+        background:#e9e5e2;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+        background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+        background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+        background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+        background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+        background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
+        height:20px;
+        /*border-radius:10px;*/
+        -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+        -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+        box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+    }
+
+    #skill li h3 {
+        position:relative;
+        top:-45px;
+    }
+
+    .bar {
+        height:18px;
+        margin:1px 2px;
+        position:absolute;
+        /*border-radius:10px;*/
+        -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+        -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+        box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+    }
+
+    .graphic-design {
+        width:80%;
+        -moz-animation:graphic-design 2s ease-out;
+        -webkit-animation:graphic-design 2s ease-out;
+        background-color: #f6533d;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f6533d), to(#f6533d));
+        background-image: -webkit-linear-gradient(top, #f6533d, #f6533d);
+        background-image: -moz-linear-gradient(top, #f6533d, #f6533d);
+        background-image: -ms-linear-gradient(top, #f6533d, #f6533d);
+        background-image: -o-linear-gradient(top, #f6533d, #f6533d);
+        background-image: linear-gradient(top, #f6533d, #f6533d);
+    }
+
+    .html-css {
+        width:70%;
+        -moz-animation:html-css 2s ease-out;
+        -webkit-animation:html-css 2s ease-out;
+        background-color: #f0bb4b;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+        background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+        background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+        background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+        background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+        background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+    }
+
+    .jquery {
+        width:65%;
+        -moz-animation:jquery 2s ease-out;
+        -webkit-animation:jquery 2s ease-out;
+        background-color: #0769ad;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#0769ad), to(#0769ad));
+        background-image: -webkit-linear-gradient(top, #0769ad, #0769ad);
+        background-image: -moz-linear-gradient(top, #0769ad, #0769ad);
+        background-image: -ms-linear-gradient(top, #0769ad, #0769ad);
+        background-image: -o-linear-gradient(top, #0769ad, #0769ad);
+        background-image: linear-gradient(top, #0769ad, #0769ad);
+    }
+
+    .wordpress {
+        width:80%;
+        -moz-animation:wordpress 2s ease-out;
+        -webkit-animation:wordpress 2s ease-out;
+        background-color: #21759b;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#21759b), to(#21759b));
+        background-image: -webkit-linear-gradient(top, #21759b, #21759b);
+        background-image: -moz-linear-gradient(top, #21759b, #21759b);
+        background-image: -ms-linear-gradient(top, #21759b, #21759b);
+        background-image: -o-linear-gradient(top, #21759b, #21759b);
+        background-image: linear-gradient(top, #21759b, #21759b);
+    }
+
+    .ror {
+        width:65%;
+        -moz-animation:ror 2s ease-out;
+        -webkit-animation:ror 2s ease-out;
+        background-color: #930e16;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#930e16), to(#930e16));
+        background-image: -webkit-linear-gradient(top, #930e16, #930e16);
+        background-image: -moz-linear-gradient(top, #930e16, #930e16);
+        background-image: -ms-linear-gradient(top, #930e16, #930e16);
+        background-image: -o-linear-gradient(top, #930e16, #930e16);
+        background-image: linear-gradient(top, #930e16, #930e16)
+    }
+
+    .sql {
+        width:60%;
+        -moz-animation:sql 2s ease-out;
+        -webkit-animation:sql 2s ease-out;
+        background-color: #3F5666;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#3F5666), to(#2F3440));
+        background-image: -webkit-linear-gradient(top, #3F5666,#2F3440);
+        background-image: -moz-linear-gradient(top, #3F5666,#2F3440);
+        background-image: -ms-linear-gradient(top,#3F5666,#2F3440);
+        background-image: -o-linear-gradient(top, #3F5666,#2F3440);
+        background-image: linear-gradient(top, #3F5666,#2F3440)
+    }
+
+    .visual {
+        width:60%;
+        -moz-animation:visual 2s ease-out;
+        -webkit-animation:visual 2s ease-out;
+        background-color: #620f47;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#620f47), to(#620f47));
+        background-image: -webkit-linear-gradient(top, #660f4b, #620f47);
+        background-image: -moz-linear-gradient(top, #660f4b, #620f47);
+        background-image: -ms-linear-gradient(top, #620f47, #620f47);
+        background-image: -o-linear-gradient(top, #660f4b,#2F3440);
+        background-image: linear-gradient(top, #660f4b,#2F3440)
+    }
+
+    @-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:80%;}  }
+    @-moz-keyframes html-css { 0%  { width:0px;} 100%{ width:70%;}  }
+    @-moz-keyframes jquery { 0%  { width:0px;} 100%{ width:65%;}  }
+    @-moz-keyframes wordpress { 0%  { width:0px;} 100%{ width:80%;}  }
+    @-moz-keyframes ror  { 0% { width:0px;} 100%{ width:65%;}  }
+    @-moz-keyframes sql { 0% { width:0px;} 100%{ width:60%;}  }
+    @-moz-keyframes visual { 0% { width:0px;} 100%{ width:60%;}  }
+
+    @-webkit-keyframes graphic-design  { 0%  { width:0px;} 100%{ width:80%;}  }
+    @-webkit-keyframes html-css  { 0%  { width:0px;} 100%{ width:70%;}  }
+    @-webkit-keyframes jquery { 0%  { width:0px;} 100%{ width:65%;}  }
+    @-webkit-keyframes wordpress { 0%  { width:0px;} 100%{ width:80%;}  }
+    @-webkit-keyframes ror  { 0%  { width:0px;} 100%{ width:65%;}  }
+    @-webkit-keyframes sql  { 0%  { width:0px;} 100%{ width:60%;}  }
+    @-webkit-keyframes visual  { 0%  { width:0px;} 100%{ width:60%;}  }
+</style>
+
+
+
+
+  <div class="row">
+    <div class="span12">
+<ul id="skill">
+  <h2>My skills</h2>
+  <br/>
+  <br/>
+  <li><span class="bar html-css"></span><h3>Html/Css/Sass</h3></li>
+  <li><span class="bar jquery"></span><h3>jQuery</h3></li>
+  <li><span class="bar ror"></span><h3>Ruby on Rails</h3></li>
+  <li><span class="bar sql"></span><h3>Sql/PostgreSql</h3></li>
+  <li><span class="bar wordpress"></span><h3>Wordpress</h3></li>
+  <li><span class="bar graphic-design"></span><h3>Graphic Design</h3></li>
+  <li><span class="bar visual"></span><h3>Visual Studio</h3></li>
+</ul>
+    </div>
+      </div>
+
+
+
+
+<!--<ul class="list-group">-->
+  <!--<li class="list-group-item">-->
+
+
+
+<!--<div class="progress">-->
+  <!--<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">-->
+    <!--<span class="sr-only">40% Complete (success)</span>-->
+  <!--</div>-->
+<!--</div>-->
+<!--<div class="progress">-->
+  <!--<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">-->
+    <!--<span class="sr-only">20% Complete</span>-->
+  <!--</div>-->
+<!--</div>-->
+<!--<div class="progress">-->
+  <!--<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">-->
+    <!--<span class="sr-only">60% Complete (warning)</span>-->
+  <!--</div>-->
+<!--</div>-->
+<!--<div class="progress">-->
+  <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">-->
+    <!--<span class="sr-only">80% Complete</span>-->
+  <!--</div>-->
+<!--</div>-->

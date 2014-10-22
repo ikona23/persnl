@@ -5,8 +5,8 @@ class PortfoliosControllerTest < ActionController::TestCase
     @portfolio = portfolios(:one)
   end
 
-  test "should get index" do
-    get :index
+  test "should get about" do
+    get :about
     assert_response :success
     assert_not_nil assigns(:portfolios)
   end

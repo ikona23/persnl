@@ -199,7 +199,7 @@
      - name (string) name of the event, dot (`.`) or slash (`/`) separated, with optional wildcards
      - f (function) event handler function
      **
-     = (function) returned function accepts a single numeric parameter that represents z-index of the handler. It is an optional feature and only used when you need to ensure that some subset of handlers will be invoked in a given order, despite of the order of assignment. 
+     = (function) returned function accepts a single numeric parameter that represents z-about of the handler. It is an optional feature and only used when you need to ensure that some subset of handlers will be invoked in a given order, despite of the order of assignment.
      > Example:
      | eve.on("mouse", eatIt)(2);
      | eve.on("mouse", scream);
@@ -207,7 +207,7 @@
      * This will ensure that `catchIt` function will be called before `eatIt`.
      *
      * If you want to put your handler before non-indexed handlers, specify a negative value.
-     * Note: I assume most of the time you don’t need to worry about z-index, but it’s nice to have this feature “just in case”.
+     * Note: I assume most of the time you don’t need to worry about z-about, but it’s nice to have this feature “just in case”.
     \*/
     eve.on = function (name, f) {
         name = String(name);
@@ -6563,7 +6563,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
      **
      * Removes range of elements from the set
      **
-     - index (number) position of the deletion
+     - about (number) position of the deletion
      - count (number) number of element to remove
      - insertion… (object) #optional elements to insert
      = (object) set elements that were deleted
